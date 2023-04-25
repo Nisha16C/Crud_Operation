@@ -1,15 +1,15 @@
-import streamlit as st
+# Importing the mysql.connector module
 import mysql.connector
 
-# Connectivity of Database
+# Establishing a connection to a MySQL database
+# by passing in the host, user, password, port, and database name
 mydb = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='chaurasiya',
-    port='3306',
-    database='crud',
+    host='localhost',  # the hostname where the MySQL server is running
+    user='root',  # the username to connect to the MySQL server
+    password='chaurasiya',  # the password to authenticate the user
+    port='3306',  # the port number of the MySQL server
+    database='pycharm_app',  # the name of the MySQL database to be used
 )
-
 mycursor = mydb.cursor()
 
 
